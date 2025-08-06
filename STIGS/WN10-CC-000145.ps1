@@ -25,10 +25,6 @@
     PS C:\> .\WN10-CC-000145.ps1 
 #>
 
-# WN10-CC-000145 Remediation Script
-# Severity: CAT II
-# Vulnerability ID: V-63645
-
 # Check if running as Administrator
 if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
     Write-Error "This script requires Administrator privileges. Please run PowerShell as Administrator."
